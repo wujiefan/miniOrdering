@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="login-img" mode="widthFix" src="{{src}}"></image>
+  <view class="login-tel">
+    <span>+86</span>
+    <input type="number" bindinput="changeTel" maxlength="11" placeholder="请输入手机号码" placeholder-class="login-tel-plc" value="{{tel}}"/>
+  </view>
+  <button bindtap="toCodePage" class="btn">下一步</button>
+</view>

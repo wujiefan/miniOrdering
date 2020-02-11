@@ -1,0 +1,12 @@
+<!--pages/system-setting/system-setting.wxml-->
+<view class='container'>
+  <view class='setting-top'></view>
+  <view class='setting-content'>
+    <view bindtap="{{item.bindtap}}" wx:for="{{settingList}}" wx:for-index="idx" data-index="{{idx}}" wx:for-item="item" class="setting-line" wx:key="{{item.id}}">
+      {{item.name}}
+    </view>
+  </view>
+  <view bindtap="switchUser" class="setting-bottom">
+    切换用户
+  </view>
+</view>

@@ -1,0 +1,22 @@
+<view class='container'>
+    <scroll-view  class="record-box"  scroll-y="true" bindscrolltolower="scroll">
+        <view class="record-content">
+            <block class="record-item" wx:for="{{balanceList}}" wx:key="date">
+                <view class="record-month">
+                    <text>{{item.date}}</text>
+                </view>
+                <view class="record-line" bindtap="toDetail" data-id="{{line.id}}" wx:for="{{item.value}}" wx:key="id" wx:for-index="idx" wx:for-item="line">
+                    <view class="record-line-left">
+                        <view class="dish-name">{{line.typeDescription}}</view>
+                        <view class="dish-time">{{line.transactionTime}}</view>
+                    </view>
+                    <view class="record-line-right record-money">
+                        <text class="{{line.addFlag==1?'green':''}}">{{(line.addFlag==1?"+":"-") + (priceFr.getPrice(line.balance))}}</text>
+                        <image class="arrow-right" mode="widthFix" src="../../imgs/icon_arrow03.png"></image>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </scroll-view >
+</view>
+<wxs module="priceFr" src="../../filter/priceFr.wxs"></wxs>

@@ -1,0 +1,52 @@
+/* pages/wechat-recharge/department-select.wxss */
+.container {
+    padding: 20px 10px;
+    background: #FFF;
+    height: 100vh;
+    display: block;
+    box-sizing: border-box;
+    overflow: auto;
+}
+.department-item{
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+.department-item+.department-item{
+    margin-top: 20px;
+}
+.department-item .name{
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.department-item .price{
+    color: #FFF;
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-align: right;
+}
+.department-item .item-bottom{
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 16px;
+}
+.detail-btn{
+    line-height: 35px;
+}
+.recharge-btn{
+    width: 90px;
+    height: 35px;
+    border-radius: 25px;
+    background: rgba(0,0,0,.2);
+    text-align: center;
+    line-height: 35px;
+}
+.bg-green{
+    background: #02A7F0;
+}
+.bg-green{
+    background: #008080;
+}

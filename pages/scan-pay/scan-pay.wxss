@@ -1,0 +1,155 @@
+/* pages/scan-pay/scan-pay.wxss */
+page{
+  height: 100%;
+}
+.container{
+	padding: 10px 10px 0 10px;
+	background: #F2F2F2;
+  height: 100%;
+  display: block;
+  font-family:PingFangSC-Medium;
+}
+.recharge-box{
+    width: 100%;
+    background: #FFF;
+    box-sizing: border-box;
+}
+.recharge-box:after{
+    content: '';
+    display: table;
+}
+.logo{
+    width: 100%;
+    padding-top: 14px;
+    text-align: center;
+}
+.logo>image{
+    width: 77px;
+    height: 77px;
+}
+.title{
+    font-size:16px;
+    font-weight:500;
+    text-align: center;
+    padding: 10px 0;
+}
+.recharge-title{
+    margin: 22px 0;
+    text-align: left;
+    font-size:14px;
+    font-weight:500;
+    padding-left: 14px;
+}
+.recharge-content{
+    font-size: 30px;
+    margin: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+    border-bottom: 2px solid #E6E6E6;
+}
+input.money{
+	height:40px;
+	border:none;
+	width: 80%;
+	font-size: 30px;
+  display:inline-block;
+  vertical-align: top;
+}
+
+.btn-clear{
+    width: 17px;
+    height:17px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACmklEQVRYR8VX3W0bMQwm7XtvNqgzQZMJGk/QeILagEXAT20maDpB0ycDkgEnE9SdoO4EdSdosoH7bpsFjbuDTtbfNQeELwJOEvmR/EjxEF5Y8IXtQysA8/l80O/33yHidQn8olw3sjLzar/ff5/NZo+5jmUBMMZcAcAnAJA1R9YA8FkpJWtUogCWy+XZbrf71sKwa2xdFMVoMplsQyiCALTWF4j4AwDOUl4k9rfMPCSiY5pc8QLo0HhlLwjiBEAZ9j8deO46uy2K4txNxwkArfUaEd8+M+yh62ul1NDebAAo2S5598kNAEjZvU+AewAAyfeXwLmhXR0uAKnf1+5FZp4Q0b18N8Z8jCiX0ruVc1rrMSIuPboeiei8+l4DKIn3K+S9Uuqu2vMpt0HGAMgeM19WVVEDMMYIcmk2XokZaGO8VH5TOWRHIEk+nyFRWKUn5XnlGTP/JKJjV7UBbBDxTYr9Lgj7fCjvHh5siOiyAcAYwynjlgc1KWO8iOlTSh2dtzmQDQAAHpRS4//xvrpzAkBrnZUCn/FKqTFGSjXVJ6QKfhPR8SlvRULXuOTcJWEOiBAJ7xDxQyRvjbDbhHOJmQLBzF+JSBpaIwLy/IYaUdB4iJgxEN5GJIqMMd5WDAB1/46Vmh2JyLknpdTgpBUnmohMNCNmHvj6u502AYGI4oj3UXPT5XuOc6sht23U52z2eyNQRkHKQ9ryq9YWIheY+a/Mlu5o5h3JFovFNTPLMNqZIOJoOp2uXIXBoVRAHA6H++dGQjzv9Xpjn/FGGfpcLWcEQX0ypOSERnIOAOPQRJwE4Dw0Mi/kAnli5lv7mQ4Bzvozsnr9FTPLb5kQVRrXkaglwWQOlApa5fwRBasgJ7RdnmkVgS4NV7r+AboVbTA6ttjTAAAAAElFTkSuQmCC') 0 0 / 17px 17px no-repeat;
+    position: absolute;
+    right:15px;
+    top: 50%;
+    -webkit-transform: translate(0,-50%);
+       -moz-transform: translate(0,-50%);
+        -ms-transform: translate(0,-50%);
+            transform: translate(0,-50%);
+}
+
+.recharge-bottom{
+    width: 100%;
+    margin: 30px 0 35px 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.btn-next{
+    width:100%;
+}
+
+.type-box{
+    margin-top: 10px;
+    background: #FFF;
+    padding: 15px 0;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.pay-type-li {
+    padding: 8px 14px;
+    height: 16px;
+    box-sizing: content-box;
+    font-size: 12px;
+}
+
+.pay-type-radio .wx-radio-input{
+  width: 16px;
+  height: 16px;
+}
+
+/* 支付密码css start */
+.bg_layer{
+  position: fixed; left: 0; top: 0; bottom: 0; right: 0;
+  background-color: rgba(0, 0, 0, 0.6); z-index: 9998;
+}
+.input_main{
+    position: fixed; left: 30rpx; bottom: 600rpx; width: 690rpx; height: 394rpx;
+    background-color: #fff; z-index: 9999;
+}
+.input_title{
+    width: 100%; height: 90rpx; line-height: 90rpx; text-align: center; 
+    font-size: 32rpx; border-bottom: 1rpx solid #e2e2e2;
+}
+.input_back{
+    position: absolute; left: 0; top: 0;
+    width: 80rpx; height: 90rpx; display: flex; justify-content: center; align-items: center;
+}
+.input_back text{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: white;
+  border: 1rpx solid #aaa;
+  border-width: 5rpx 0 0 5rpx;
+  transform: rotate(-45deg);
+}
+
+.input_tip{  margin: 30rpx; font-size: 24rpx; color: #888; }
+
+/* 密码掩码模拟 */
+.input_row{
+  width: 620rpx; margin: 0 auto; height: 98rpx; position: relative;
+  display: flex; align-items: center; border: 1rpx solid #e2e2e2; border-radius: 20rpx;
+}
+.input_row .pwd_item{
+  flex: 1; display: flex; align-items: center; justify-content: center; 
+  height: 100%; border-right: 1rpx solid #e2e2e2; position: relative;
+}
+.pwd_item:nth-last-of-type(1) { border-right: 0; } 
+.pwd_item text { 
+  width: 30rpx; height: 30rpx; border-radius: 30rpx; background-color: #555;
+}
+
+.forget_pwd{ 
+  float: right; margin: 30rpx; width: 100rpx; text-align: right; font-size: 24rpx; color: #ff7800;
+}
+
+/* 文本输入框位置: 设置到左边隐藏 */
+.input_control { 
+  position: relative; left: -300rpx; bottom: 0; width: 100rpx; height: 100rpx;
+}

@@ -1,0 +1,91 @@
+.record-box{
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+    padding:0 10px;
+    overflow-y:auto;
+    font-family:PingFangSC-Medium;
+    box-sizing: border-box;
+}
+.record-content{
+    width:100%;
+    background: #FFF;
+}
+.record-month{
+    background: #F2F2F2;
+    height:80rpx;
+    text-align: center;
+    line-height: 80rpx;
+}
+.record-month>text{
+    color:#FFF;
+    font-size: 12px;
+    background: #D8D8D8;
+    padding: 3px;
+}
+.record-line{
+    width:100%;
+    height:180rpx;
+    padding:0 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.record-line-left{
+    border-bottom: 1px solid #E8E8F2;
+    width:60%;
+    height: 100%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.dish-name{
+    height:80rpx;
+    line-height: 70rpx;
+    font-size:14px;
+    font-weight:500;
+    padding-top: 5px;
+}
+.dish-time{
+    height:80rpx;
+    line-height: 70rpx;
+    font-size:12px;
+    color: #9A9DA7;
+    padding-bottom: 5px;
+}
+.record-line-right{
+    border-bottom: 1px solid #E8E8F2;
+    width:40%;
+    height: 180rpx;
+    line-height: 180rpx;
+    float: left;
+    font-size:18px;
+    font-weight:500;
+    position: relative;
+    text-align: right;
+    padding-right: 80rpx;
+    box-sizing: border-box;
+}
+.arrow-right{
+    width: 36rpx;
+    height: 36rpx;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translate(0,-9px);
+    -moz-transform: translate(0,-9px);
+    -ms-transform: translate(0,-9px);
+    transform: translate(0,-9px);
+}
+.total-money{
+    font-size: 14px;
+    font-weight: bold;
+}
+.green{
+    color: #53B63C;
+}
+.review-text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #4867F9;
+}

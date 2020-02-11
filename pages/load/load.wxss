@@ -1,0 +1,7 @@
+/**index.wxss**/
+.login-img{
+    margin-top:20%;
+    width:200rpx;
+}
+
+

@@ -1,0 +1,7 @@
+<view class="container">
+    <image src="../../imgs/{{transaction?'transaction-true.png':'transaction-fasle.png'}}" mode="widthFix" class="tct-img"></image>
+    <view wx:if="{{transaction}}" class="transaction-true">支付成功</view>
+    <view wx:else class="transaction-false">支付失败</view>
+    <view class="transaction-msg">{{transaction?totalPrice:message}}</view>
+    <button bindtap="toUser" class="btn btn-back">完 成</button>
+</view>

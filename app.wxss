@@ -1,0 +1,26 @@
+/**app.wxss**/
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top:50rpx;
+  /* justify-content: space-between; */
+  box-sizing: border-box;
+}
+.btn{
+    height:40px;
+    line-height: 40px;
+    background: -webkit-gradient(linear,right top, left top,from(rgba(125,164,255,1)),to(rgba(85,129,254,1)));
+    background: -webkit-linear-gradient(right,rgba(125,164,255,1) 0%,rgba(85,129,254,1) 100%);
+    background: -moz-linear-gradient(right,rgba(125,164,255,1) 0%,rgba(85,129,254,1) 100%);
+    background: linear-gradient(270deg,rgba(125,164,255,1) 0%,rgba(85,129,254,1) 100%);
+    font-size: 18px;
+    color:#FFF;
+    text-align: center;
+    font-weight: 500;
+    border:none;
+}
+.button-hover{
+    background: #3A8EE6;
+}

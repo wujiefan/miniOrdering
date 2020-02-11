@@ -1,0 +1,13 @@
+<!--pages/wechat-recharge/department-select.wxml-->
+<view class='container'>
+    <view class='department-list'>
+        <view wx:for="{{departmentList}}" wx:key="departmentId" class="department-item" style="background:{{item.bgCol}};">
+            <view class="name" data-name="name">{{item.departmentName}}</view>
+            <view class="price">￥{{item.availableBalance}}</view>
+            <view class="item-bottom">
+                <view class="detail-btn" data-id="{{item.departmentId}}" catchtap="toBalance">消费明细 ></view>
+                <view class="recharge-btn" data-id="{{item.departmentId}}" catchtap="toRecharge">充值</view>
+            </view>
+        </view>
+    </view>
+</view>

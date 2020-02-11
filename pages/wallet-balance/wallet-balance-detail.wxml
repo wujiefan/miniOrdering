@@ -1,0 +1,24 @@
+<view >
+    <view class="content">
+        <!-- 余额详情 start-->
+        <view class="title-box">
+            金额
+            <text data-name="balance">{{balance}}</text>
+        </view>
+        <view class="detail-box">
+            <view class="detail-line">
+                <view>类型</view>
+                <view data-name="typeDescription">{{typeDescription}}</view>
+            </view>
+            <view class="detail-line">
+                <view>交易单号</view>
+                <view data-name="serialNumber">{{serialNumber}}</view>
+            </view>
+            <view class="detail-line">
+                <view>交易时间</view>
+                <view data-name="transactionTime">{{transactionTime}}</view>
+            </view>
+        </view>
+        <!-- 余额详情 end-->
+    </view>
+</view>

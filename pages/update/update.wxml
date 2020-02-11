@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="info">
+        <view class="info-li">
+            <view class="info-li-name">姓  名:</view>
+            <input type="text" bindinput="changeName" value="{{memberName}}" />
+        </view>
+    </view>
+    <button bindtap="toUser" class="btn">确 定</button>
+</view>

@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/load/load",
+        "pages/department-map/department-map",
+        "pages/wallet-balance/wallet-balance",
+        "pages/wallet-balance/wallet-balance-detail",
+        "pages/balance/balance",
+        "pages/pay/pay",
+        "pages/wechat-recharge/department-select",
+        "pages/bluetooth/bluetooth",
+        "pages/transaction/transaction",
+        "pages/scan-pay/scan-pay",
+        "pages/password/password",
+        "pages/system-setting/system-setting",
+        "pages/wechat-recharge/wechat-recharge",
+        "pages/user/user",
+        "pages/unit-services/unit-services",
+        "pages/web-view/web-view",
+        "pages/index/index",
+        "pages/update/update",
+        "pages/info/info",
+        "pages/pay-detail/pay-detail",
+        "pages/vcode/vcode",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "效准智慧结算",
+        "navigationBarTextStyle": "black"
+    },
+    "sitemapLocation": "sitemap.json",
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于搜索附近商家"
+        }
+    }
+}

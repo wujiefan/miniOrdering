@@ -1,0 +1,53 @@
+page{
+    background: #F0F0F0;
+}
+.container{
+    padding:0;
+    position: relative;
+    display:block;
+    flex-direction:none;
+    align-items:none;
+
+}
+.blc-top{
+    padding:60rpx 0;
+    background: #22AC38;
+    width:100%;
+    color:#fff;
+    margin-bottom:10px;
+}
+.blc-top>view{
+    padding-left:60rpx;
+    font-size:16px;
+}
+.blc-top>view:last-child{
+    font-size:40px;
+}
+
+.blc-lis{
+    width:100%;
+    background: #fff;
+    padding:0 15px;
+    box-sizing: border-box;
+}
+.blc-li{
+    padding:15px 0;
+    position: relative;
+    border-bottom:1px solid #F2F2F2;
+}
+.blc-li>view{
+    font-size:16px;
+}
+.blc-li-time{
+    font-size:12px;
+    color:#9B9B9B;
+}
+.blc-li-pay{
+    position: absolute;
+    right:0;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.blc-li-pay.green{
+    color:#22AC38;
+}

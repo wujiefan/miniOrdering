@@ -1,0 +1,20 @@
+<!--logs.wxml-->
+<view class="container">
+    <view class="user-header">
+        <image bindtap="toInfo" class="user-img" mode="scaleToFill" src="{{userInfo.avatarUrl}}"></image>
+        <view class="user-name">{{memberInfo.memberName||''}}</view>
+    </view>
+    <view class="user-second">
+        <view class="user-funs">
+            <view bindtap="toPay">
+                <image src="../../imgs/pay.png" mode="widthFix"></image>
+                <view class="user-funs-text">付 钱</view>
+            </view>
+            <view bindtap="toPatDetail">
+                <image src="../../imgs/paylist.png" mode="widthFix"></image>
+                <view class="user-funs-text">余 额</view>
+                <view class="user-balance">￥{{remainingCredit||'0.00'}}</view>
+            </view>
+        </view>
+    </view>
+</view>

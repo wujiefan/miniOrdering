@@ -1,0 +1,185 @@
+/* pages/wechat-recharge/wechat-recharge.wxss */
+
+page {
+    height: 100%;
+}
+
+.container {
+    padding: 10px 10px 0 10px;
+    background: #f2f2f2;
+    height: 100%;
+    display: block;
+}
+
+.title-box {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    border-bottom: 1px dashed #f2f2f2;
+    position: relative;
+    background: #fff;
+}
+
+.title-box::after {
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: '';
+    position: absolute;
+    background: #f2f2f2;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+.title-box::before {
+    width: 10px;
+    height: 10px;
+    display: block;
+    content: '';
+    position: absolute;
+    background: #f2f2f2;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+.title-box>view {
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.title-box>view>image {
+    width: 24px;
+    height: 24px;
+    vertical-align: text-bottom;
+}
+
+.recharge-box {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.recharge-title {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    margin: 30px 0 20px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.recharge-content {
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 10px;
+    position: relative;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+input.money {
+    height: 40px;
+    border: none;
+    width: 80%;
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn-clear {
+    width: 17px;
+    height: 17px;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACmklEQVRYR8VX3W0bMQwm7XtvNqgzQZMJGk/QeILagEXAT20maDpB0ycDkgEnE9SdoO4EdSdosoH7bpsFjbuDTtbfNQeELwJOEvmR/EjxEF5Y8IXtQysA8/l80O/33yHidQn8olw3sjLzar/ff5/NZo+5jmUBMMZcAcAnAJA1R9YA8FkpJWtUogCWy+XZbrf71sKwa2xdFMVoMplsQyiCALTWF4j4AwDOUl4k9rfMPCSiY5pc8QLo0HhlLwjiBEAZ9j8deO46uy2K4txNxwkArfUaEd8+M+yh62ul1NDebAAo2S5598kNAEjZvU+AewAAyfeXwLmhXR0uAKnf1+5FZp4Q0b18N8Z8jCiX0ruVc1rrMSIuPboeiei8+l4DKIn3K+S9Uuqu2vMpt0HGAMgeM19WVVEDMMYIcmk2XokZaGO8VH5TOWRHIEk+nyFRWKUn5XnlGTP/JKJjV7UBbBDxTYr9Lgj7fCjvHh5siOiyAcAYwynjlgc1KWO8iOlTSh2dtzmQDQAAHpRS4//xvrpzAkBrnZUCn/FKqTFGSjXVJ6QKfhPR8SlvRULXuOTcJWEOiBAJ7xDxQyRvjbDbhHOJmQLBzF+JSBpaIwLy/IYaUdB4iJgxEN5GJIqMMd5WDAB1/46Vmh2JyLknpdTgpBUnmohMNCNmHvj6u502AYGI4oj3UXPT5XuOc6sht23U52z2eyNQRkHKQ9ryq9YWIheY+a/Mlu5o5h3JFovFNTPLMNqZIOJoOp2uXIXBoVRAHA6H++dGQjzv9Xpjn/FGGfpcLWcEQX0ypOSERnIOAOPQRJwE4Dw0Mi/kAnli5lv7mQ4Bzvozsnr9FTPLb5kQVRrXkaglwWQOlApa5fwRBasgJ7RdnmkVgS4NV7r+AboVbTA6ttjTAAAAAElFTkSuQmCC') 0 0 / 17px 17px no-repeat;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+.recharge-bottom {
+    width: 100%;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.btn-next {
+    width: 100%;
+}
+
+.recharge-record {
+    margin: 25px 0 15px 0;
+    height: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #4867f9;
+    text-align: center;
+    line-height: 20px;
+}
+
+.recharge-record>view {
+    display: inline-block;
+    height: 100%;
+}
+
+.recharge-record>view>image {
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+}
+
+.mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    z-index: 999;
+}
+
+.mask>view {
+    width: 4rem;
+    height: 3.6rem;
+    border-radius: 0.2rem;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -1.8rem 0 0 -2rem;
+}
+
+.mask>view>image {
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -.6rem 0 0 -.6rem;
+}
+
+.mask>view>text {
+    width: 100%;
+    padding: 0.2rem 0;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}

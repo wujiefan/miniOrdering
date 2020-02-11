@@ -1,0 +1,25 @@
+<!--pages/department-map/department-map.wxml-->
+<view class='container'>
+    <view class="map-bar"> 
+        <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}"></map>
+    </view> 
+    <view class="department-info">
+         <view class="department-list" wx:if="{{departmentList.length}}">
+            <view class="info-head">
+                以下店铺支持智慧结算：
+            </view>
+            <view class="department-item" wx:for="{{departmentList}}" wx:key="id" data-id="{{item.id}}" bindtap="toServices">
+                <view>
+                    <checkbox />
+                    {{item.name}}
+                </view>
+                <view>
+                    {{item.distance}}km
+                </view>
+            </view>
+         </view>
+         <view wx:else class="no-department">
+            附近没有支持智慧结算的餐厅
+         </view>
+    </view>
+</view>

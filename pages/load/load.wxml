@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="login-img" mode="widthFix" src="{{src}}"></image>
+</view>

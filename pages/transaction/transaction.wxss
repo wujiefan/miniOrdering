@@ -1,0 +1,26 @@
+
+.container{
+    padding:0;
+}
+.tct-img{
+    width:160rpx;
+    margin-top:40px;
+}
+.transaction-true,.transaction-false{
+    font-size:26px;
+    margin:15px;
+}
+.transaction-true{
+    color:#22AC38;
+}
+.transaction-false{
+    color:#EC0400;
+}
+.transaction-msg{
+    font-size:26px;
+    color:#4A4A4A;
+    margin-bottom:20px;
+}
+.btn-back{
+  width: 250px;
+}

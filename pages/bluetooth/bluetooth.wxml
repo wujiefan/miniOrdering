@@ -1,0 +1,10 @@
+<!--pages/bluetooth/bluetooth.wxml-->
+<view class='container'>
+  <view class="section">
+    <input bindinput="bindKeyInput" placeholder="输入要发送的信息" auto-focus />
+    <view class="btn-area">
+      <button bindtap="sendInfo">发送</button>
+    </view>
+    <view>{{consoleLog}}</view>
+  </view>
+</view>

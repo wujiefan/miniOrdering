@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="blc-top">
+        <view>
+            账户余额(元)
+        </view>
+        <view>
+            {{remainingCredit}}
+        </view>
+    </view>
+    <view class="blc-lis">
+        <block wx:for="{{entities}}" wx:key="*this" wx:for-index="index" wx:for-item="item">
+            <view data-index="{{index}}" bindtap="{{item.totalPrices>=0?'':'toDetail'}}" class="blc-li">
+                <view>
+                    {{item.title}}
+                </view>
+                <view class="blc-li-time">
+                    {{item.time}}
+                </view>
+                <view class="blc-li-pay {{item.totalPrices>0?'green':''}}">
+                    {{item.totalPrices}}
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

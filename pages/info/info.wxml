@@ -1,0 +1,18 @@
+<view class="container">
+    <view class="info">
+        <view class="info-li" bindtap="toUpdate">
+            <view class="info-li-name">姓名</view>
+            <view class="info-li-value">{{memberName}}</view>
+            <view class="to-right"></view>
+        </view>
+        <view class="info-li">
+            <view class="info-li-name">所属单位</view>
+            <view class="info-li-value">{{departmentName}}</view>
+        </view>
+        <view class="info-li">
+            <view class="info-li-name">手机号</view>
+            <view class="info-li-value">{{telNo}}</view>
+        </view>
+    </view>
+    <view bindtap="outLog" class="out-log">退出登录</view>
+</view>

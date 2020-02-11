@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="pay-box" bindtap="getPayQRCode">
+        <view class="box-top">
+            就餐卡支付
+        </view>
+        <image class="{{!resend && 'opc'}}" src="{{qrCode}}" mode="widthFix"></image>
+        <view wx:if="{{!resend}}" class="pay-resend">
+            重新获取二维码
+        </view>
+        <view wx:else class="pay-noresend">
+            {{retime}}秒后重新获取
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<view class="container">
+    <view class="vcode-text">验证码已发送至{{telNumber}}</view>
+    <view wx:if="{{resend}}" bindtap="reGetCode" class="can-resend">重新发送</view>
+    <view wx:else class="no-resend">{{retime}}秒后重新获取</view>
+    <view class="login-tel">
+      <input type="number" value="{{code}}" bindinput="inputCode" placeholder="请输入验证码" placeholder-class="login-tel-plc" />
+    </view>
+    <button bindtap="toUser" class="btn">确 定</button>
+</view>

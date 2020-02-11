@@ -1,0 +1,48 @@
+<view class="container">
+    <view class="pay-box">
+        <view class="pay-box-title">下单信息</view>
+        <view class="pay-goods">
+            <block wx:for="{{dishes}}" wx:for-index="index" wx:for-item="item" wx:key="*this">
+                <view class="pay-goods-li">
+                    <view class="pay-goods-num">
+                        <view>{{item.name}}</view>
+                        <view>×{{item.quantity}}</view>
+                    </view>
+                    <view>￥{{item.totalPrice}}</view>
+                </view>
+            </block>
+        </view>
+        <view class="pay-box-totle">
+            实付 <span> ￥{{totalPrices||'0'}}</span>
+        </view>
+    </view>
+    <view class="pay-box">
+        <view class="pay-box-title">订单信息</view>
+        <view class="pay-goods">
+            <view class="pay-goods-li">
+                <view>
+                    订单编号
+                </view>
+                <view>{{serialNumber}}</view>
+            </view>
+            <view class="pay-goods-li">
+                <view>
+                    生成时间
+                </view>
+                <view>{{orderTime}}</view>
+            </view>
+            <view class="pay-goods-li mg-t">
+                <view>
+                    支付方式
+                </view>
+                <view>就餐卡</view>
+            </view>
+            <view class="pay-goods-li ">
+                <view>
+                    支付时间
+                </view>
+                <view>{{payTime}}</view>
+            </view>
+        </view>
+    </view>
+</view>

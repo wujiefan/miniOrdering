@@ -1,0 +1,55 @@
+page{
+    background: #F0F0F0;
+}
+.container{
+    padding:0;
+    position: relative;
+    display:block;
+    flex-direction:none;
+    align-items:none;
+
+}
+.pay-box{
+    width:90%;
+    padding:5px;
+    margin:20px auto;
+    background: #fff;
+    border-radius: 5px;
+}
+.pay-box view{
+    font-size:14px;
+    box-sizing: border-box;
+}
+.pay-box-title{
+    padding:10px 0;
+    text-align: center;
+    color:#9B9B9B;
+    border-bottom: 1px solid #F0F0F0;
+}
+.pay-goods-li,.pay-goods-num{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+    justify-content: space-between;
+}
+.pay-goods-li{
+    padding:7px 10px;
+}
+.pay-goods-num{
+    padding-right:10px;
+}
+.pay-goods-num>view{
+    min-width:20px;
+}
+.pay-box-totle{
+    padding:10px;
+    text-align: right;
+    border-top:1px solid #F0F0F0;
+}
+.pay-box-totle>span{
+    color:#EC0400;
+}
+.mg-t{
+    margin-top:10px;
+    border-top:1px solid #F0F0F0;
+}

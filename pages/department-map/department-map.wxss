@@ -1,0 +1,34 @@
+/* pages/department-map/department-map.wxss */
+.container {
+    background: #f2f2f2;
+    height: 100vh;
+    padding: 0;
+    overflow: hidden;
+}
+.map-bar{
+    width: 100%;
+    height: 60vh;
+}
+.map{
+    width: 100%;
+    height: 100%;
+}
+.department-info{
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+}
+.info-head{
+    padding: 10px;
+    color: #999;
+}
+.department-item{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.no-department{
+    text-align: center;
+    padding-top: 40px;
+    color: #999;
+}

@@ -1,0 +1,26 @@
+/**index.wxss**/
+.login-img{
+    width:200rpx;
+}
+.login-tel{
+    display: flex;
+    flex-direction: row;
+    padding:10rpx;
+    border-bottom:1px solid #ccc;
+    margin:100rpx 0;
+}
+.login-tel>span{
+    margin-right: 25rpx;
+    height:50rpx;
+    line-height: 50rpx;
+}
+.login-tel>input{
+    height:50rpx;
+    line-height: 50rpx;
+}
+.login-tel-plc{
+    font-size: 16px;
+    color:#ccc;
+}
+
+

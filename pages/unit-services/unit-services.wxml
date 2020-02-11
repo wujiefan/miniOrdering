@@ -1,0 +1,40 @@
+<!--pages/unit-services/unit-services.wxml-->
+<view class='container'>
+  <view class='top'>
+    <view class='department-name'>{{departmentName}}</view>
+    <view class='top-left'>
+      <open-data class="logo" type="userAvatarUrl"></open-data>
+    </view>
+    <view class='top-right'>
+      <view class='user-name'>{{userName}}</view>
+      <view class='remaining-money'>
+        可用余额:
+        <text class='number'>{{remainingMoney}}</text> 元
+      </view>
+    </view>
+    <view class='scan' bindtap="scanCode">
+      <image src='../../imgs/scan.png'></image>
+      <view>扫一扫</view>
+    </view>
+    <!-- <view class='qrcode'>
+      <image src='../../imgs/icon_home_top_qrcode.png'></image>
+      <view>付款</view
+      >
+    </view> -->
+  </view>
+  <view class='middle'>
+    <view>
+      <view class='pay-text'>使用付款码付款</view>
+      <image bindtap="getQrCode" src='{{qrcodeUrl}}' class='qr-code'></image>
+      <view  bindtap="getQrCode" class='refresh-btn'>点击二维码刷新</view>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view>
+      <navigator url="{{item.url}}" wx:for="{{bottomRouter}}" wx:for-index="idx" data-index="{{idx}}" wx:for-item="item" class="new-page" wx:key="id" wx:if="{{item.showFlag}}">
+        <image src='{{item.img}}'></image>
+        <view>{{item.name}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>
